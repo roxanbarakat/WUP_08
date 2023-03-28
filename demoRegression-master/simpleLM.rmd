@@ -48,7 +48,12 @@ abline(simp)
 summary.lm(simp)
 ```
 
-
+```{r}
+simp <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp)
+summary.lm(simp)
+```
 
 
 # Now predict the length of a bear who has a neck of 17, 22, and 26
